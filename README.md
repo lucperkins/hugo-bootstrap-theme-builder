@@ -17,4 +17,10 @@ This will open your browser (you may need to refresh) to the theme builder. Now 
 
 ## Customization
 
-To build your theme, you can customize the color palette in [`config.yaml`](./config.yaml). You can also modify the Sass file at `assets/sass/mytheme.sass` to apply any logic you'd like.
+To build your theme, you can customize the color palette in [`config.yaml`](./config.yaml). You can also modify the Sass file at `assets/sass/theme.sass` to apply any logic you'd like.
+
+## Modules
+
+You can enable and disable Bootstrap modules (`breadcrumb`, `button-group`, etc.) by modifying the list of modules in `config.yaml`.
+
+
