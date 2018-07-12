@@ -10,3 +10,39 @@ params:
     yellow: gold
     orange: orange
     primary: navy
+  modules:
+  - functions
+  - variables
+  - mixins
+  - root
+  - reboot
+  - type
+  - images
+  - code
+  - grid
+  - tables
+  - forms
+  - buttons
+  - transitions
+  - dropdown
+  - button-group
+  - input-group
+  - custom-forms
+  - nav
+  - navbar
+  - card
+  - breadcrumb
+  - pagination
+  - badge
+  - jumbotron
+  - alert
+  - progress
+  - media
+  - list-group
+  - close
+  - modal
+  - tooltip
+  - popover
+  - carousel
+  - utilities
+  - print

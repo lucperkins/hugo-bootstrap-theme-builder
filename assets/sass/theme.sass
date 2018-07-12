@@ -10,8 +10,11 @@
 
 // Other custom logic
 
-// Bootstrap is imported once all variables have been set
-@import bootstrap/bootstrap
+// Import Bootstrap module specified in config.yaml
+{{ $modules := index $params "modules" }}
+{{ range $modules }}
+@import bootstrap/{{ . }}
+{{ end }}
 
 // Add custom styles below
 // .my-custom-class
