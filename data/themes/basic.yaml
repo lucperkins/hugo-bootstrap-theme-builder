@@ -1,0 +1,50 @@
+colors:
+  blue: blue
+  red: red
+  green: green
+  yellow: gold
+  orange: orange
+  primary: sienna
+  secondary: olive
+  success: green
+  danger: red
+  warning: yellow
+  info: blue
+  light: gray
+  dark: black
+modules:
+- functions
+- variables
+- mixins
+- root
+- reboot
+- type
+- images
+- code
+- grid
+- tables
+- forms
+- buttons
+- transitions
+- dropdown
+- button-group
+- input-group
+- custom-forms
+- nav
+- navbar
+- card
+- breadcrumb
+- pagination
+- badge
+- jumbotron
+- alert
+- progress
+- media
+- list-group
+- close
+- modal
+- tooltip
+- popover
+- carousel
+- utilities
+- print

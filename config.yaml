@@ -3,6 +3,8 @@ languageCode: en-us
 title: Bootstrap Theme Builder
 
 params:
+  theme: basic
+
   colors:
     blue: blue
     red: red

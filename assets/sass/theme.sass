@@ -1,17 +1,17 @@
 // Custom colors set in config.yaml
 {{- $params := .Site.Params -}}
-{{- $colors := index $params "colors" -}}
-{{- $allColors := slice $colors -}}
-{{- range $allColors -}}
-{{- range $k, $v := . -}}
+{{- $themes := .Site.Data.themes -}}
+{{- $themeName := index $params "theme" -}}
+{{- $theme := index $themes $themeName -}}
+{{- $colors := index $theme "colors" -}}
+{{- $modules := index $theme "modules" -}}
+{{- range $k, $v := $colors -}}
 {{ printf "$%s" $k }}: {{ $v }}
 {{ end -}}
-{{- end -}}
 
 // Other custom logic
 
 // Import Bootstrap module specified in config.yaml
-{{ $modules := index $params "modules" }}
 {{ range $modules }}
 @import bootstrap/{{ . }}
 {{ end }}
