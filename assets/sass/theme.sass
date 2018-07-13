@@ -5,13 +5,13 @@
 {{- $theme := index $themes $themeName -}}
 {{- $colors := index $theme "colors" -}}
 {{- $modules := index $theme "modules" -}}
+
+// Theme-defined colors
 {{- range $k, $v := $colors -}}
 {{ printf "$%s" $k }}: {{ $v }}
 {{ end -}}
 
-// Other custom logic
-
-// Import Bootstrap module specified in config.yaml
+// Import Bootstrap modules specified in config.yaml
 {{ range $modules }}
 @import bootstrap/{{ . }}
 {{ end }}
